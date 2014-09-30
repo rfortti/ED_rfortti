@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package Ex06_incompleto;
+package Ex06_incompleto_NaoSeiFazer;
 
 /**
  *

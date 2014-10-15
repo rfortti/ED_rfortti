@@ -10,16 +10,16 @@ package Ex07;
  *
  * @author aleaguado traduzido de Robert Lafore
  */
-class No
+public class No
    {
    private String nome;              // vai armazenar uma string qualquer
    private String palavra;           // vai armazenar uma string qualquer
    private No next;              // referência para o próximo item da lista
 // -------------------------------------------------------------
-   public No(String name, String word) // metodo construtor
+   public No(String word, String name) // metodo construtor
       {
-      nome = name;                 // initializa os dois atributos do No
-      palavra = word;                 // o No next a principio fica como null
+      this.nome = name;                 // initializa os dois atributos do No
+      this.palavra = word;                 // o No next a principio fica como null
       }                           // 
 // -------------------------------------------------------------
    public void displayNo()      // mostra os valores do proprio nó
@@ -40,5 +40,9 @@ class No
    {
        return nome;
    }
+   
+   public String getPalavra() {
+        return palavra;
+    }
    }  // fim da classe nó
 ////////////////////////////////////////////////////////////////

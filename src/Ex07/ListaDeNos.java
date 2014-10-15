@@ -50,18 +50,18 @@ class ListaDeNos
       System.out.println("");
       }
 // -------------------------------------------------------------
-   public String find(String key)
+   public No find(String nome)
    {
        No current = first;
        
-       while(current.getNome() != key)
+       while (!current.getNome().equals(nome))
        {
            if (current.getNome() == null)
                return null;
            else
                current = current.getNext();
        }
-       return current.getNome();
+       return current;
    }
    }  // fim da classe Lista de Nós
 //////////////////////////////////////////////////////////////

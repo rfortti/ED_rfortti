@@ -89,7 +89,7 @@ class ListaDeNos
    
    // -------------------------------------------------------------                                
    public void insertOrder(String n, String p, int i)  // insere em ordem
-      {                           
+   {                           
       No newNo = new No(n, p, i);
       No previous = first; 
       No current = first;              
@@ -99,8 +99,11 @@ class ListaDeNos
           previous = current;
           current = current.getNext();
       }
-      if ()
-      }
+      
+          previous = newNo;
+          newNo = current;
+
+   }
 // -------------------------------------------------------------
 // -------------------------------------------------------------
    }  // fim da classe Lista de Nós
